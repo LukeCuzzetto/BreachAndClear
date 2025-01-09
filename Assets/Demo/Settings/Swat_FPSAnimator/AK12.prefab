@@ -403,6 +403,10 @@ MonoBehaviour:
   cameraReloadAnimation: {fileID: 0}
   grenadeClip: {fileID: 0}
   cameraGrenadeAnimation: {fileID: 0}
+  fireSound1: {fileID: 8300000, guid: 9bc55ed8c6569f7488de989bdb6718e7, type: 3}
+  fireSound2: {fileID: 8300000, guid: 876a3435e4fd7ba4ab5e312d81fc86fa, type: 3}
+  fireSound3: {fileID: 8300000, guid: 5ec8cb7f11d1347419dd2c935499af33, type: 3}
+  random: 0
   fireClip: {fileID: 0}
   recoilData: {fileID: 11400000, guid: 242b4114f86718f41a72a9bb8ebd19d0, type: 2}
   recoilPatternSettings: {fileID: 11400000, guid: be2be2c72d4648d4d9c1626c6fae08bc,

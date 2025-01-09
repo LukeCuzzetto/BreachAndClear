@@ -26,6 +26,12 @@ namespace Demo.Scripts.Runtime.Item
         [SerializeField] private FPSAnimationAsset grenadeClip;
         [SerializeField] private FPSCameraAnimation cameraGrenadeAnimation;
 
+        [SerializeField] public AudioClip fireSound1;
+        [SerializeField] public AudioClip fireSound2;
+        [SerializeField] public AudioClip fireSound3;
+
+        public int random;
+
         [Header("Recoil")]
         [SerializeField] private FPSAnimationAsset fireClip;
         [SerializeField] private RecoilAnimData recoilData;
@@ -281,6 +287,20 @@ namespace Demo.Scripts.Runtime.Item
                 _recoilAnimation.Play();
                 
                 muzzleFlash.Play();
+
+                random = Random.Range(0, 3);
+
+                if (random == 1) {
+                    AudioSource.PlayClipAtPoint(fireSound1, firePoint.transform.position);
+                }
+                else if (random == 2) {
+                    AudioSource.PlayClipAtPoint(fireSound2, firePoint.transform.position);
+                }
+                else if (random == 3) {
+                    AudioSource.PlayClipAtPoint(fireSound3, firePoint.transform.position);
+                }
+                else
+                AudioSource.PlayClipAtPoint(fireSound1, firePoint.transform.position);
 
                 RaycastHit hit;
                 Vector3 fireDirection = firePoint.transform.forward;
