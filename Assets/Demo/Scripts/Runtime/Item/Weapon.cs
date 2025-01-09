@@ -6,6 +6,7 @@ using KINEMATION.FPSAnimationFramework.Runtime.Playables;
 using KINEMATION.FPSAnimationFramework.Runtime.Recoil;
 using KINEMATION.KAnimationCore.Runtime.Input;
 using UnityEngine.VFX;
+using UnityEngine.UI;
 
 using Demo.Scripts.Runtime.AttachmentSystem;
 
@@ -304,10 +305,14 @@ namespace Demo.Scripts.Runtime.Item
 
                 RaycastHit hit;
                 Vector3 fireDirection = firePoint.transform.forward;
+
+
                 if (Physics.Raycast(firePoint.transform.position, fireDirection, out hit))
                 {
                     Debug.Log("Hit: " + hit.collider.name);
-                    // Add additional logic for when the raycast hits something
+                    if(hit.collider.gameObject.tag == "Target")
+                        Destroy(hit.collider.gameObject);
+                    
                 }
             }
 
