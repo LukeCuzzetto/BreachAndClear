@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0bb6630d7bf85064fac61f0fc20d795e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 185294
+  packageName: SWAT Shooting Range
+  packageVersion: 1.2
+  assetPath: Assets/SWAT Shooting Range/Materials/Engine.mat
+  uploadId: 570533

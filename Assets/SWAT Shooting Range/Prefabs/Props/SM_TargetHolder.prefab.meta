@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0daf3e1cb5c1d6849a7dd5959a640969
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 185294
+  packageName: SWAT Shooting Range
+  packageVersion: 1.2
+  assetPath: Assets/SWAT Shooting Range/Prefabs/Props/SM_TargetHolder.prefab
+  uploadId: 570533

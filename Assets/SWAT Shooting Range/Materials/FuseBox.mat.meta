@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fe6f116fe2c7ec44892b573a3ee96194
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 185294
+  packageName: SWAT Shooting Range
+  packageVersion: 1.2
+  assetPath: Assets/SWAT Shooting Range/Materials/FuseBox.mat
+  uploadId: 570533

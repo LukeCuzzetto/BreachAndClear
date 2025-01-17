@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ccf43c42e9b5148498b38325357f9425
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 185294
+  packageName: SWAT Shooting Range
+  packageVersion: 1.2
+  assetPath: Assets/SWAT Shooting Range/Materials/MeshFloor.mat
+  uploadId: 570533

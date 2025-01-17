@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6cce5cfbf4153074c8a0e18a185266b8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 185294
+  packageName: SWAT Shooting Range
+  packageVersion: 1.2
+  assetPath: Assets/SWAT Shooting Range/Scenes/ModularTargetPracticeHangar/LightingData.asset
+  uploadId: 570533

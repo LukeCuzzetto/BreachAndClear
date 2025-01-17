@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e4abfe5df4b8c684e970506271ef1d52
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 185294
+  packageName: SWAT Shooting Range
+  packageVersion: 1.2
+  assetPath: Assets/SWAT Shooting Range/Prefabs/Lights/SM_ProjectorLampR.prefab
+  uploadId: 570533

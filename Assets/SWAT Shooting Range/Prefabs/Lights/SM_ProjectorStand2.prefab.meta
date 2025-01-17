@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 600f6f278ab7ce7468439a7adca37168
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 185294
+  packageName: SWAT Shooting Range
+  packageVersion: 1.2
+  assetPath: Assets/SWAT Shooting Range/Prefabs/Lights/SM_ProjectorStand2.prefab
+  uploadId: 570533

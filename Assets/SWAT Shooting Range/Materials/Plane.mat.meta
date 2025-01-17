@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: baced64e0d4fb654580a1fb85a867a7c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 185294
+  packageName: SWAT Shooting Range
+  packageVersion: 1.2
+  assetPath: Assets/SWAT Shooting Range/Materials/Plane.mat
+  uploadId: 570533

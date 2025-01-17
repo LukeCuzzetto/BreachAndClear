@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0f744e05dc1bdb94f8c43000e5b28b16
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 185294
+  packageName: SWAT Shooting Range
+  packageVersion: 1.2
+  assetPath: Assets/SWAT Shooting Range/Prefabs/Decals/CombatReady.prefab
+  uploadId: 570533

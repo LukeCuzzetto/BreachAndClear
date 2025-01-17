@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b575e1094e2af1748909bf1e49db5d87
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 185294
+  packageName: SWAT Shooting Range
+  packageVersion: 1.2
+  assetPath: Assets/SWAT Shooting Range/Materials/Sandbags.mat
+  uploadId: 570533

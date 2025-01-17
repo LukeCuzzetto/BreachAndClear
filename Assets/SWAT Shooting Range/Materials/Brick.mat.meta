@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 293862cf374556c46aa335844a133dea
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 185294
+  packageName: SWAT Shooting Range
+  packageVersion: 1.2
+  assetPath: Assets/SWAT Shooting Range/Materials/Brick.mat
+  uploadId: 570533
