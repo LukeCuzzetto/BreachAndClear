@@ -31,6 +31,8 @@ namespace Demo.Scripts.Runtime.Item
         [SerializeField] public AudioClip fireSound2;
         [SerializeField] public AudioClip fireSound3;
 
+        [SerializeField] public AudioClip hitSound;
+
         public int random;
 
         [Header("Recoil")]
@@ -310,9 +312,15 @@ namespace Demo.Scripts.Runtime.Item
                 if (Physics.Raycast(firePoint.transform.position, fireDirection, out hit))
                 {
                     Debug.Log("Hit: " + hit.collider.name);
-                    if(hit.collider.gameObject.tag == "Target")
-                        Destroy(hit.collider.gameObject);
-                    
+                    if(hit.collider.gameObject.CompareTag("Target"))
+                    {
+                        Target target = hit.collider.gameObject.GetComponent<Target>();
+                        if (target != null)
+                        {
+                            target.HandleHit(hit.point, hitSound);
+                            
+                        } 
+                    } 
                 }
             }
 
