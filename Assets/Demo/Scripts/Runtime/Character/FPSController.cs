@@ -64,6 +64,11 @@ namespace Demo.Scripts.Runtime.Character
         private static int _inspectEndHash = Animator.StringToHash("InspectEnd");
         private static int _slideHash = Animator.StringToHash("Sliding");
 
+        private float footstepTimer = 5;
+        public float footstepInterval = 0.5f;
+        public AudioClip footstepSound;
+        public AudioSource audioSource;
+
         private void PlayTransitionMotion(FPSAnimatorLayerSettings layerSettings)
         {
             if (layerSettings == null)
@@ -77,6 +82,7 @@ namespace Demo.Scripts.Runtime.Character
         private bool IsSprinting()
         {
             return _movementComponent.MovementState == FPSMovementState.Sprinting;
+            
         }
         
         private bool HasActiveAction()

@@ -33,6 +33,7 @@ namespace Demo.Scripts.Runtime.Item
 
         [SerializeField] public AudioClip hitSound;
 
+        [SerializeField] public GameObject hitParticleEffect;
         public int random;
 
         [Header("Recoil")]
@@ -312,12 +313,15 @@ namespace Demo.Scripts.Runtime.Item
                 if (Physics.Raycast(firePoint.transform.position, fireDirection, out hit))
                 {
                     Debug.Log("Hit: " + hit.collider.name);
+                    GameObject hitEffect = Instantiate(hitParticleEffect, hit.point, Quaternion.LookRotation(hit.normal));
+                     
                     if(hit.collider.gameObject.CompareTag("Target"))
                     {
                         Target target = hit.collider.gameObject.GetComponent<Target>();
                         if (target != null)
                         {
                             target.HandleHit(hit.point, hitSound);
+                
                             
                         } 
                     } 

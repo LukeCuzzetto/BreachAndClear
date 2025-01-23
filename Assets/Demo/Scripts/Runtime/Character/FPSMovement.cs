@@ -94,6 +94,12 @@ namespace Demo.Scripts.Runtime.Character
         private bool _consumeMoveInput = true;
 
         private float _gaitProgress;
+
+        private float footstepTimer = 0;
+        public float footstepInterval = 0.5f;
+        public AudioClip footstepSound;
+        public AudioSource audioSource;
+
         
         public bool IsInAir()
         {
@@ -103,6 +109,7 @@ namespace Demo.Scripts.Runtime.Character
         public bool IsMoving()
         {
             return !Mathf.Approximately(_inputDirection.normalized.magnitude, 0f);
+            
         }
 
         private void AllowConsumingInput()
@@ -235,6 +242,8 @@ namespace Demo.Scripts.Runtime.Character
             }
             
             MovementState = FPSMovementState.Walking;
+            
+
         }
 
         private void OnMovementStateChanged()
@@ -278,6 +287,9 @@ namespace Demo.Scripts.Runtime.Character
                 
                 onSprintStarted?.Invoke();
                 _desiredGait = movementSettings.sprinting;
+
+                
+                
                 return;
             }
 
@@ -435,6 +447,7 @@ namespace Demo.Scripts.Runtime.Character
             }
             
             _wasMoving = isMoving;
+            HandleFootsteps();
 
             if (MovementState == FPSMovementState.InAir)
             {
@@ -575,5 +588,32 @@ namespace Demo.Scripts.Runtime.Character
             MovementState = FPSMovementState.Sliding;
         }
 #endif
+
+
+        private void HandleFootsteps()
+        {
+        
+
+            if (footstepTimer > 0)
+            {
+                footstepTimer -= Time.deltaTime;
+                return;
+            }
+
+            if (IsMoving() && FPSMovementState.Sprinting != MovementState && !IsInAir())
+            {
+                audioSource.PlayOneShot(footstepSound, Random.Range(0.1f, 1f));
+                footstepTimer = footstepInterval;
+            }
+
+            else if (IsMoving() && FPSMovementState.Sprinting == MovementState)
+            {
+                audioSource.PlayOneShot(footstepSound, Random.Range(0.1f, 1f));
+                footstepTimer = .3f;
+
+            }
+
+            
+        }
     }
 }
