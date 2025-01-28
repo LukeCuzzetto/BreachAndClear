@@ -602,13 +602,13 @@ namespace Demo.Scripts.Runtime.Character
 
             if (IsMoving() && FPSMovementState.Sprinting != MovementState && !IsInAir())
             {
-                audioSource.PlayOneShot(footstepSound, Random.Range(0.1f, 1f));
+                audioSource.PlayOneShot(footstepSound, Random.Range(0.5f, 1f));
                 footstepTimer = footstepInterval;
             }
 
             else if (IsMoving() && FPSMovementState.Sprinting == MovementState)
             {
-                audioSource.PlayOneShot(footstepSound, Random.Range(0.1f, 1f));
+                audioSource.PlayOneShot(footstepSound, Random.Range(0.5f, 1f));
                 footstepTimer = .3f;
 
             }
