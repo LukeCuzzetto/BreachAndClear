@@ -201,6 +201,8 @@ namespace Demo.Scripts.Runtime.Item
 
         public override bool OnFirePressed()
         {
+            
+            
             // Do not allow firing faster than the allowed fire rate.
             if (Time.unscaledTime - _lastRecoilTime < 60f / fireRate)
             {
@@ -213,6 +215,7 @@ namespace Demo.Scripts.Runtime.Item
             OnFire();
             
             return true;
+            
         }
 
         public override bool OnFireReleased()

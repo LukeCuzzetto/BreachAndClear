@@ -425,6 +425,9 @@ namespace Demo.Scripts.Runtime.Character
         
         private void Update()
         {
+            
+                
+            
             UpdateMovementState();
             
             if (_cachedMovementState != MovementState)
@@ -466,7 +469,9 @@ namespace Demo.Scripts.Runtime.Character
             UpdateAnimatorParams();
 
             _cachedMovementState = MovementState;
-        }
+
+            }
+        
 
         private void LateUpdate()
         {

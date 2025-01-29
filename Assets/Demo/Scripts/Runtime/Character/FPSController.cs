@@ -300,9 +300,12 @@ namespace Demo.Scripts.Runtime.Character
 
         private void Update()
         {
+            
             Time.timeScale = settings.timeScale;
             UpdateLookInput();
             OnMovementUpdated();
+
+            
         }
 
 #if ENABLE_INPUT_SYSTEM
